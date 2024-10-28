@@ -1,0 +1,300 @@
+/* Generales */
+* {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(235, 235, 235);
+}
+
+.div-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+}
+
+/* NavBar */
+.navigation_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #333;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 81px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    min-width: 300px;
+}
+
+.nav-title {
+    display: flex;
+    flex-grow: 1;
+    min-width: 270px;
+    margin-left: 20px;
+}
+
+.nav-title h1 {
+    color: rgb(39, 207, 236);
+    background: #333;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+li a {
+    display: block;
+    color: rgb(39, 207, 236);
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+    height: 100%;
+    transition:all 0.5s ease-in-out;
+}
+
+li a:hover {
+    background-color: rgb(39, 207, 236);
+    color: white;
+}
+
+/* container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    margin-bottom: 4em;
+    overflow: auto;
+    height: auto;
+    width: auto;
+}
+
+.content-title {
+    font-size: 2em;
+    color: rgb(39, 207, 236);
+    margin-left: 16px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+#pofile-photo {
+    margin-right: 20px;
+}
+
+.footer-text p {
+    margin: 0;
+}
+
+footer div.footer-text a {
+    text-decoration: none;
+    color: rgb(39, 207, 236);
+    margin-left: 1em;
+}
+
+.circular {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Imagen del footer circular */ 
+#pofile-photo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.circular {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+/* bio.html */
+.bio-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.bio-image img {
+    max-width: 100%;
+    width: 550px;
+    height: 650px;
+    margin: 1em;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    padding-bottom: 5%;
+}
+
+.content-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    width: 780px;
+}
+
+.content-text article{
+    padding: 1em;
+    background-color: white;
+    box-shadow: 2px 2px 3px 0.7px rgb(39, 207, 236);
+}
+.content-text p{
+    flex-basis: 25%;
+    margin: 1em;
+}
+
+/* portfolio.html */
+.cuadricula {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding: 5%
+}
+
+.image-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: white;
+    gap: 1em;
+    box-shadow: 2px 2px 3px 0.7px rgb(39, 207, 236);
+}
+
+.photos-portfolio {
+    width : 360px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photos-portfolio img {
+    width: 100%;
+}
+
+/* Contacto */
+.form_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    background-color: white;
+    gap: 1em;
+    box-shadow: 2px 2px 3px 0.7px rgb(39, 207, 236);
+}
+
+.form_container p{
+    text-align: center;
+}
+
+.form_container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 20em;
+    gap: 0.3em;
+}
+
+.form_container input[type='text'], 
+input[type='email']{
+    width: 100%;
+    margin: 0.2em;
+    padding: 0.3em;
+}
+
+.sexRadio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+    width: 18em;
+}
+
+.checkboxes-options{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 1em;
+}
+
+.checkboxes-options label{
+    font-size: 0.7em;
+}
+
+.form_container input[type="submit"] {
+    display: flex;
+    background-color: #333;
+    font-size: 1.2em;
+    color: white;
+    width: 100px;
+    border-radius: 50%;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(39, 207, 236);
+    border-color: rgb(39, 207, 236);
+    cursor: pointer;
+}
+
+ 
