@@ -4,7 +4,7 @@
 
 Este será tu primer proyecto donde crearás tu página personal.
 
-![img](../../assets/htmlcssjs.jpg)
+![img](../personalWeb/assets/htmlcss.jpg)
 
 <br>
 
@@ -108,4 +108,4 @@ _`Coming soon...`_
 
 Cualquier otro extra que se te ocurra será bienvenido :blush: ¡A por ello!
 
-![img](../../assets/htmlcss.jpg)
+![img](../personalWeb/assets/htmlcssjs.jpg)
