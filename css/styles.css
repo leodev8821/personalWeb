@@ -1,6 +1,6 @@
 /* Generales */
 * {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
     font-style: normal;
     margin: 0;
@@ -13,7 +13,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    background-color: rgb(235, 235, 235);
+    /*background-color: rgb(235, 235, 235);*/
+    background-color: #363a3f;
 }
 
 .div-title{
@@ -28,7 +29,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #333;
+    background-color: #1b1b1b;
     align-items: center;
     width: 100%;
     position: fixed;
@@ -37,6 +38,10 @@ body {
     height: 81px;
     padding: 0;
     margin: 0;
+}
+
+.navigation_bar h1,a{
+    font-family: "Bebas Neue";
 }
 
 .nav {
@@ -52,7 +57,6 @@ body {
 
 .nav-title h1 {
     color: rgb(39, 207, 236);
-    background: #333;
     font-size: 2.5em;
     margin: 0;
     padding: 0;
@@ -83,7 +87,7 @@ li a:hover {
     color: white;
 }
 
-/* container */
+/* index */
 .container {
     display: flex;
     flex-direction: column;
@@ -95,17 +99,44 @@ li a:hover {
     width: auto;
 }
 
-.content-title {
+.container p{
+    gap: 1em;
+    padding: 1em;
+    width: 780px;
+    font-family: "Poiret One";
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: larger;
+}
+
+.content-title-1 {
     font-size: 2em;
     color: rgb(39, 207, 236);
     margin-left: 16px;
     text-align: center;
+    font-family: "Bebas Neue";
+}
+
+.content-title-2 {
+    font-size: 2em;
+    color:#1a73e8;
+    margin-left: 16px;
+    text-align: center;
+    font-family: "Bebas Neue";
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    padding-bottom: 5%;
 }
 
 /* Footer */
 footer {
     width: 100%;
-    background-color: #333;
+    background-color: #1b1b1b;
     padding: 10px 0;
     color: white;
     position: fixed;
@@ -128,6 +159,7 @@ footer {
 
 .footer-text p {
     margin: 0;
+    font-family: "Bebas Neue";
 }
 
 footer div.footer-text a {
@@ -169,13 +201,7 @@ footer div.footer-text a {
     width: 550px;
     height: 650px;
     margin: 1em;
-}
-
-.content{
-    display: flex;
-    justify-content: center;
-    overflow: auto;
-    padding-bottom: 5%;
+    border-radius: 2%;
 }
 
 .content-text{
@@ -184,11 +210,15 @@ footer div.footer-text a {
     gap: 1em;
     padding: 1em;
     width: 780px;
+    font-family: "Poiret One";
+    font-weight: 400;
+    font-style: normal;
 }
 
 .content-text article{
     padding: 1em;
     background-color: white;
+    border-radius: 2%;
     box-shadow: 2px 2px 3px 0.7px rgb(39, 207, 236);
 }
 .content-text p{
@@ -205,7 +235,7 @@ footer div.footer-text a {
     padding: 5%
 }
 
-.image-title{
+.card-image{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,6 +243,8 @@ footer div.footer-text a {
     background-color: white;
     gap: 1em;
     box-shadow: 2px 2px 3px 0.7px rgb(39, 207, 236);
+    border-radius: 2%;
+    max-width: 24em;
 }
 
 .photos-portfolio {
@@ -228,7 +260,7 @@ footer div.footer-text a {
 }
 
 /* Contacto */
-.form_container {
+.card-form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -236,13 +268,16 @@ footer div.footer-text a {
     background-color: white;
     gap: 1em;
     box-shadow: 2px 2px 3px 0.7px rgb(39, 207, 236);
+    border-radius: 2%;
+    max-width: 24em;
 }
 
-.form_container p{
+.card-form-container p{
     text-align: center;
+    color: black;
 }
 
-.form_container form{
+.card-form-container form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,7 +286,7 @@ footer div.footer-text a {
     gap: 0.3em;
 }
 
-.form_container input[type='text'], 
+.card-form-container input[type='text'], 
 input[type='email']{
     width: 100%;
     margin: 0.2em;
@@ -263,6 +298,10 @@ input[type='email']{
     flex-direction: row;
     justify-content: space-between;
     gap: 1em;
+}
+
+.sexRadio label{
+    font-size: small;
 }
 
 .checkboxes{
@@ -282,13 +321,13 @@ input[type='email']{
     font-size: 0.7em;
 }
 
-.form_container input[type="submit"] {
+.card-form-container input[type="submit"] {
     display: flex;
-    background-color: #333;
+    background-color: #1a73e8;
     font-size: 1.2em;
     color: white;
     width: 100px;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 input[type="submit"]:hover {
